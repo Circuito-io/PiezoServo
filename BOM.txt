@@ -1,4 +1,3 @@
-Circuito.io  - https://github.com/MatanRobo/Dronepoles/blob/master/readme.md
 
 PiezoServo BOM:
 
