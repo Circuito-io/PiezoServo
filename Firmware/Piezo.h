@@ -1,19 +1,16 @@
-#ifndef RGBLED_H
-#define RGBLED_H
+#ifndef PIEZO_H
+#define PIEZO_H
 
 #include "arduino.h"
 
 class Piezo
 {
 	public:
-		Piezo(int pin, int threshold = 50);
+		Piezo(int pin);
 		int read(); 
-		bool readThreshold(int threshold = -1);
-		int recorder(int type[], int maxLenght, int timeOut = 1000, int listeningMode = 0);
-		bool recordComparison(int typeA[], int typeB[],int size,int maxDiff = 15);
+		
 		
 	private:
-		int signalPin;
-		int piezoThreshold;
+		const int signalPin;
 };
-#endif //__RGBLED_H
+#endif //PIEZO_H
